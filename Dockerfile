@@ -11,7 +11,7 @@ RUN apt-get -y install software-properties-common python-software-properties
 
 # Install php
 RUN add-apt-repository ppa:ondrej/php && apt-get update
-RUN apt-get -y install \
+RUN apt-get -y --force-yes install \
 php7.0 \
 php7.0-common \
 php7.0-cgi \
