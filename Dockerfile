@@ -1,5 +1,8 @@
 FROM ubuntu:14.04
 
+# Update repository
+RUN apt-get update
+
 # Install build dependenies
 RUN apt-get install git
 
