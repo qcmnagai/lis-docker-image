@@ -7,7 +7,7 @@ RUN apt-get update
 RUN apt-get -y install git
 
 # Install python-software-properties for add-apt-repository
-RUN apt-get -y install python-software-properties
+RUN apt-get -y install software-properties-common python-software-properties
 
 # Install php
 RUN add-apt-repository ppa:ondrej/php && apt-get update
