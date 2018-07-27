@@ -1,7 +1,10 @@
 FROM ubuntu:14.04
 
-# Install dependenies
+# Install build dependenies
 RUN apt-get install git
+
+# Install python-software-properties for add-apt-repository
+RUN apt-get install python-software-properties
 
 # Install php
 RUN add-apt-repository ppa:ondrej/php && apt-get update
