@@ -4,14 +4,14 @@ FROM ubuntu:14.04
 RUN apt-get update
 
 # Install build dependenies
-RUN apt-get install git
+RUN apt-get -y install git
 
 # Install python-software-properties for add-apt-repository
-RUN apt-get install python-software-properties
+RUN apt-get -y install python-software-properties
 
 # Install php
 RUN add-apt-repository ppa:ondrej/php && apt-get update
-RUN apt-get install \
+RUN apt-get -y install \
 php7.0 \
 php7.0-common \
 php7.0-cgi \
