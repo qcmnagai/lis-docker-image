@@ -1,9 +1,10 @@
 FROM ubuntu:14.04
 
-# Add repository
-RUN add-apt-repository ppa:ondrej/php && apt-get update
+# Install dependenies
+RUN apt-get install git
 
 # Install php
+RUN add-apt-repository ppa:ondrej/php && apt-get update
 RUN apt-get install \
 php7.0 \
 php7.0-common \
