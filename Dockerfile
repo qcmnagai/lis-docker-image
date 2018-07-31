@@ -31,3 +31,9 @@ php7.0-xml \
 php7.0-zip \
 php-apcu \
 libapache2-mod-php7.0
+RUN php -v
+
+# Install node
+RUN add-apt-repository ppa:chris-lea/node.js && apt-get update
+RUN apt-get install nodejs npm
+RUN node -v
